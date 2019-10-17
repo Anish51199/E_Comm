@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="408dp"
+            android:layout_height="731dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp">
+
+            <ImageButton
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:onClick="ClickedOnTv"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/tv2" />
+
+            <ImageButton
+                android:id="@+id/radio"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/radio2" />
+
+            <ImageButton
+                android:id="@+id/newspaper"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/news1" />
+
+            <ImageButton
+                android:id="@+id/online"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/online1" />
+
+            <ImageButton
+                android:id="@+id/hoarding"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:srcCompat="@drawable/hoarding2" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
